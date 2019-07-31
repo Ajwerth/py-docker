@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    build: 
+      dockerfile: ./dockerfile
+      context: .
+    image: py/app
+    volumes:
+      - .:/app
